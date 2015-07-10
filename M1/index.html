@@ -5,8 +5,8 @@
 		<button ng-click="hide=!hide">Toggle show/hide</button>
 		<button ng-click="items[items.length]=items.length+1">click meh!</button>
 		
-		
-		<input type="text" ng-model="q"></input>
+		{{q}}<br>
+		<input type="text" ng-model="q" placeholder="search..."></input>
 		<div ng-repeat="item in items | filter:q" ng-show="hide">
 			{{item}}
 		</div>
